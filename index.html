@@ -11,6 +11,9 @@
     <!-- Google Font -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- BoxIcon -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- Email API-->
@@ -58,7 +61,7 @@
                             <img src="images/CoffeeAndRaptop.jpg"></img>
                         </div>
                         <div className="main_contents">
-                            <h2>안녕하세요. 주니어 개발자 김진한입니다. </h2>
+                            <h2>안녕하세요. 주니어(경력 1년) 개발자 김진한입니다. </h2>
                             <p>
                                 서울에서 1년간 개발자로써 근무를 하였습니다. 현재는 이직활동을 하고 있습니다.
                                 또한 커리큘럼을 쌓기위해 AWS(EC2)를 공부하고 있습니다.
@@ -74,39 +77,98 @@
             return (
                 <section className="about_me" id="about_me">
                     <div className="about_box_case">
-                        <div className="about_title">
-                            <h2>ABOUT ME
-                                <span>THE BRIEF INTRODUCTION OF MYSELF</span>
-                            </h2>
-                        </div>
-                        <img src="images/IDPhoto.jpg" alt="" className="left_img"></img>
-                        <div className="profile_box">
-                            <div className="about_text">
-                                <p>NAME</p> 김진한
+                        <div className="about_display">
+                            <div className="about_title">
+                                <h2>ABOUT ME
+                                    <span>THE BRIEF INTRODUCTION OF MYSELF</span>
+                                </h2>
                             </div>
-                            <div className="about_text">
-                                <p>ADDRESS</p> 부산시 금정구 중앙대로1685번길 24
+                            <div className="about_image_box">
+                                <img src="images/IDPhoto.jpg" alt="" className="left_img"></img>
                             </div>
-                            <div className="about_text">
-                                <p>PHONE</p> 010-5435-0984
-                            </div>
-                            <div className="about_text">
-                                <p>CHANNEL</p>
-                                <a className="link_text" href="https://github.com/JINHANKIM-ops/PotoFolio">
-                                    https://github.com/JINHANKIM-ops/MyProfile
-                                </a>
-                            </div>
-                            <div className="about_text">
-                                <p>경력</p>
-                                2022.01~2022.10 (주)이앤아이컴즈<br />
-                                2021.04~2021.05 (주)디지털원
-                                <p>학력</p>
-                                2019.08 국가평생교육진흥원대학교 컴퓨터공학과 졸업<br />
-                                2011.02 동의과학대 자동차공학과 졸업
+                            <div>
+                                <div className="about_text">
+                                    <p>NAME</p> 김진한
+                                </div>
+                                <div className="about_text">
+                                    <p>ADDRESS</p> 부산시 금정구 중앙대로1685번길 24
+                                </div>
+                                <div className="about_text">
+                                    <p>PHONE</p> 010-5435-0984
+                                </div>
+                                <div className="about_text">
+                                    <p>CHANNEL</p>
+                                    <a className="link_text" href="https://github.com/JINHANKIM-ops/PotoFolio/tree/master">
+                                        https://github.com/JINHANKIM-ops/PotoFolio/tree/master
+                                    </a>
+                                </div>
+                                <div className="about_text">
+                                    <p>경력</p>
+                                    2022.01~2022.10 (주)이앤아이컴즈<br />
+                                    2021.04~2021.05 (주)디지털원
+                                    <p>학력</p>
+                                    2019.08 국가평생교육진흥원대학교 컴퓨터공학과 졸업<br />
+                                    2011.02 동의과학대 자동차공학과 졸업
+                                    <p>교육</p>
+                                    2021.09 코리아IT아카데미 수료<br />
+                                    2018.06 (주)KG아이티뱅크 수료
+                                    <p>수상</p>
+                                    2021.09 코리아IT아카데미 홈페이지 등재<br />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section >
+            );
+        }
+
+        const SkillsCard = () => {
+            return (
+                <section className="skills" id="skills">
+                    <div className="box_case">
+                        <div className="skills_title">
+                            <h2>SKILLS</h2>
+                        </div>
+                        <div className="box_set">
+                            <div className="box box_color_1">
+                                <p>BackEnd</p>
+                                <div>
+                                    Java, SpringFramework, SpringBoot, MyBatis, , RESTfulAPI(JSON), RSA
+                                </div>
+                            </div>
+                            <div className="box box_color_2">
+                                <p>FrontEnd</p>
+                                <div>
+                                    HTML5, CSS3, JavaScript, React, Jquery, XFrame
+                                </div>
+                            </div>
+                            <div className="box box_color_3">
+                                <p>Server</p>
+                                <div>
+                                    Apache Tomcat, Node.js, Zabbix
+                                </div>
+                            </div>
+                            <div className="box box_color_4">
+                                <p>DB</p>
+                                <div>
+                                    MariaDB, Oracle, MySql, SqlGate
+                                </div>
+                            </div>
+                            <div className="box box_color_5">
+                                <p>OS</p>
+                                <div>
+                                    Linux(Centos7)
+                                </div>
+                            </div>
+                            <div className="box box_color_6">
+                                <p>Tools</p>
+                                <div>
+                                    Eclipse, Intellij, VSCode, HeidiSql, Mysql Workbench, Xframe, SqlGate, XShell, Putty, Filezilla
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             );
         }
 
@@ -119,6 +181,24 @@
                         </div>
 
                         <div className="project_box_set">
+                            <div className="project_box">
+                                <p className="project_name">MyProfile앱</p>
+                                <p className="company_name">
+                                    <strong>2023.04 - 2023.06</strong> |
+                                    <small>개인</small>
+                                </p>
+                                <div className="contents_box">
+                                    플랫폼: Web<br />
+                                    개발인원: 1명<br />
+                                    역할: 앱 전체개발<br />
+                                    언어: Html, Css, JavaScript, React, OpenAPI<br />
+                                    서버: Node.js<br />
+                                    DB: MariaDB<br />
+                                    IDE: VSCode<br />
+                                    형상관리: Github
+                                </div>
+                            </div>
+
                             <div className="project_box">
                                 <p className="project_name">CWE상담앱</p>
                                 <p className="company_name">
@@ -136,7 +216,6 @@
                                     형상관리: RSA
                                 </div>
                             </div>
-
 
                             <div className="project_box">
                                 <p className="project_name">전광판</p>
@@ -193,59 +272,67 @@
                                     형상관리: Github
                                 </div >
                             </div >
+
+                            <div className="project_box">
+                                <p className="project_name">인사관리앱</p>
+                                <p className="company_name">
+                                    <strong>2021.04 - 2021.05</strong> |
+                                    <small>(주)디지털원</small>
+                                </p>
+                                <div className="contents_box">
+                                    플랫폼: Web<br />
+                                    개발인원: 2명<br />
+                                    역할: 사원 목록 화면 및 사원 상세정보 화면<br />
+                                    언어: Html, Css, Javascript<br />
+                                    프레임워크: SpringFramework<br />
+                                    서버: Apache Tomcat<br />
+                                    DB: Oracle<br />
+                                    IDE: EgovFramework, Oracle Developer<br />
+                                    형상관리: Github
+                                </div>
+                            </div>
+
+                            <div className="project_box">
+                                <p className="project_name">온라인 공연예약앱</p>
+                                <p className="company_name">
+                                    <strong>2021.08 - 2021.09</strong> |
+                                    <small>코라이IT아카데미</small>
+                                </p>
+                                <div className="contents_box">
+                                    플랫폼: Mobile App<br />
+                                    개발인원: 4명<br />
+                                    역할: 메인화면, 상세페이지, DB, OpenAPI, 예매하기, 예매내역, 병합<br />
+                                    언어: Html, Css<br />
+                                    프레임워크: SpringFramework, Android Studio<br />
+                                    서버: Apache Tomcat<br />
+                                    DB: Oracle<br />
+                                    IDE: Eclipse, Android Studio, Oracle Developer<br />
+                                    형상관리: Github
+                                </div>
+                            </div>
+
+                            <div className="project_box">
+                                <p className="project_name">펜션 예약앱</p>
+                                <p className="company_name">
+                                    <strong>2021.06 - 2021.08</strong> |
+                                    <small>코라이IT아카데미</small>
+                                </p>
+                                <div className="contents_box">
+                                    플랫폼: Web<br />
+                                    개발인원: 3명<br />
+                                    역할: 메인화면, 상세페이지, DB, 예약하기, 예약내역, 마이페이지, 병합<br />
+                                    언어: Html, Css, JavaScript<br />
+                                    프레임워크: SpringFramework<br />
+                                    서버: Apache Tomcat<br />
+                                    DB: Oracle<br />
+                                    IDE: Eclipse, Sublime Text, Oracle Developer<br />
+                                    형상관리: Github
+                                </div>
+                            </div>
+
                         </div>
                     </div >
                 </section >
-            );
-        }
-
-        const SkillsCard = () => {
-            return (
-                <section className="skills" id="skills">
-                    <div className="box_case">
-                        <div className="skills_title">
-                            <h2>SKILLS</h2>
-                        </div>
-                        <div className="box_set">
-                            <div className="box">
-                                <p>BackEnd</p>
-                                <div>
-                                    Java, SpringFramework, SpringBoot, MyBatis, , RESTfulAPI(JSON), RSA
-                                </div>
-                            </div>
-                            <div className="box">
-                                <p>FrontEnd</p>
-                                <div>
-                                    HTML5, CSS3, JavaScript, React, Jquery, XFrame
-                                </div>
-                            </div>
-                            <div className="box">
-                                <p>Server</p>
-                                <div>
-                                    Apache Tomcat, Node.js, Zabbix
-                                </div>
-                            </div>
-                            <div className="box">
-                                <p>DB</p>
-                                <div>
-                                    MariaDB, Oracle, MySql, SqlGate
-                                </div>
-                            </div>
-                            <div className="box">
-                                <p>OS</p>
-                                <div>
-                                    Linux(Centos7)
-                                </div>
-                            </div>
-                            <div className="box">
-                                <p>Tools</p>
-                                <div>
-                                    Eclipse, Intellij, VSCode, HeidiSql, Mysql Workbench, Xframe, SqlGate, XShell, Putty, Filezilla
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             );
         }
 

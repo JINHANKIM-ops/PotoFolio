@@ -180,21 +180,16 @@ header {
 
 .about_box_case {
     width: 1170px;
-    display: inline;
-    float: left;
-    position: relative;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.left_img {
-    width: auto;
-    height: 330px;
-    object-fit: cover;
-    float: left;
-    margin-right: 30px;
-    border: 1px solid #b8b0b0;
-    margin-top: 5px;
+.about_display {
+    width: 680px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .about_title h2 {
@@ -209,12 +204,23 @@ header {
     font: 300 20px/24px 'Open Sans', sans-serif;
 }
 
-.profile_box {
-    box-shadow: 3px 3px 5px #202020;
+.about_image_box {
+    float: left;
+    margin-right: 20px;
+    height: 450px;
+}
+
+.left_img {
+    width: auto;
+    height: 330px;
+    object-fit: cover;
+    border: 1px solid #b8b0b0;
+    margin-top: 5px;
 }
 
 .about_text {
     color: black;
+    justify-content: center;
 }
 
 .about_text p {
@@ -237,7 +243,6 @@ header {
 
 .skills_title {
     text-align: center;
-    /* color: #FFFFFF; */
     color: #202020;
 }
 
@@ -250,7 +255,6 @@ header {
     float: left;
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px solid #202020;
     position: relative;
 }
 
@@ -276,8 +280,40 @@ header {
     margin: 10px;
     width: auto;
     height: 140px;
-    background-color: #FFFFFF;
+    background-color: #FDFFFF;
     border: 1px solid #202020;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box_color_1 {
+    /*BackEnd*/
+    background: #FFE400;
+}
+
+.box_color_2 {
+    /*FrontEnd*/
+    background: #ABF200;
+}
+
+.box_color_3 {
+    /*Server*/
+    background: #FFBB00;
+}
+
+.box_color_4 {
+    /*DB*/
+    background: #00D8FF;
+}
+
+.box_color_5 {
+    /*OS*/
+    background: #2478FF;
+}
+
+.box_color_6 {
+    /*Tools*/
+    background: #FF4848;
 }
 
 .box_set>div>p {
@@ -287,7 +323,7 @@ header {
 
 .project {
     width: 1200px;
-    min-height: 75vh;
+    min-height: 220vh;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -299,37 +335,30 @@ header {
 
 .project_box_case {
     width: 1170px;
-    float: left;
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px solid #202020;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .project_box_set {
-    width: 1170px;
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     color: black;
     align-items: center;
     justify-content: center;
 }
 
 .project_box_set>div {
-    display: flex;
-    flex-basis: calc(50% - 40px);
-    flex-direction: column;
     padding: 10px;
 }
 
 .project_box {
-    margin: 10px;
-    width: auto;
+    margin: auto;
+    width: 600px;
     height: auto;
-    background-color: #FFFFFF;
-    border: 1px solid #202020;
+    background-color: #FDFFFF;
+    border-top: 1px solid #202020;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .project_title {
@@ -344,6 +373,8 @@ header {
 .project_name {
     font-weight: bold;
     font-size: 20px;
+    color: #0000C9;
+    margin-bottom: auto;
 }
 
 .company_name {
