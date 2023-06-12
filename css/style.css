@@ -207,12 +207,12 @@ header {
 .about_image_box {
     float: left;
     margin-right: 20px;
-    height: 450px;
+    height: 470px;
 }
 
 .left_img {
     width: auto;
-    height: 330px;
+    height: 340px;
     object-fit: cover;
     border: 1px solid #b8b0b0;
     margin-top: 5px;
