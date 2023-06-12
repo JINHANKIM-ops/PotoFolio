@@ -1,0 +1,412 @@
+@import '../css/grid.css';
+@import '../css/font-awesome.css';
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rm;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #BDBDBD;
+}
+
+/*Custom Scrollbar*/
+html::-webkit-scrollbar {
+    /*Scrollbar 전체영역*/
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    /*세로 Scrollbar*/
+    /*transparent:투명, none:없음*/
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 50px, 100px;
+    margin-top: 40px;
+}
+
+header {
+    width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_setbox {
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_container {
+    width: 1200px;
+    margin: auto;
+    min-height: 8vh;
+    background-color: #191919;
+}
+
+.menu_setbox nav {
+    padding-top: 20px;
+}
+
+.menu_item {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.logo {
+    float: left;
+    font-size: 40px;
+    padding-left: 10px;
+    margin-top: 20px;
+    line-height: normal;
+    color: #F6F6F6;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.logo a {
+    color: #F6F6F6;
+}
+
+.logo a:hover {
+    color: #CCCC00;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    flex-grow: 1;
+    transition: 0.5s;
+}
+
+.menu span {
+    margin-left: 20px;
+}
+
+.menu span a {
+    color: #FFFFFF;
+}
+
+.menu span a:hover {
+    color: #CCCC00;
+}
+
+.link_text {
+    color: blue;
+}
+
+.home {
+    width: 1200px;
+    min-height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(30deg, #FFA648 50%, #FDFFFF 50%);
+    margin-top: 0;
+}
+
+.main_box {
+    width: 1200px;
+    min-height: 60vh;
+    float: left;
+}
+
+.main_image {
+    float: right;
+}
+
+.main_image img {
+    width: 400px;
+    transform: skew(-30deg, 30deg) rotate(-10deg);
+    position: absolute;
+    left: 55%;
+    top: 22%;
+}
+
+.main_contents {
+    position: absolute;
+    bottom: 40%;
+    left: 25%;
+    width: 500px;
+    text-align: left;
+}
+
+.main_contents h2 {
+    font-size: 15px;
+    color: #202020;
+    font-weight: bold;
+}
+
+.main_contents p {
+    font-size: 15px;
+}
+
+.about_me {
+    width: 1200px;
+    min-height: 65vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background: #FDFFFF;
+}
+
+.about_box_case {
+    width: 1170px;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.left_img {
+    width: auto;
+    height: 330px;
+    object-fit: cover;
+    float: left;
+    margin-right: 30px;
+    border: 1px solid #b8b0b0;
+    margin-top: 5px;
+}
+
+.about_title h2 {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+
+.about_title h2 span {
+    padding-bottom: 10px;
+    display: block;
+    font: 300 20px/24px 'Open Sans', sans-serif;
+}
+
+.profile_box {
+    box-shadow: 3px 3px 5px #202020;
+}
+
+.about_text {
+    color: black;
+}
+
+.about_text p {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1px;
+}
+
+.skills {
+    width: 1200px;
+    min-height: 65vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background: #FDFFFF;
+    padding-top: 15px;
+}
+
+.skills_title {
+    text-align: center;
+    /* color: #FFFFFF; */
+    color: #202020;
+}
+
+.skills_title h2 {
+    font-size: 60px;
+}
+
+.box_case {
+    width: 1170px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #202020;
+    position: relative;
+}
+
+.box_set {
+    width: 1170px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_set>div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    flex-direction: column;
+    padding: 10px;
+}
+
+.box {
+    margin: 10px;
+    width: auto;
+    height: 140px;
+    background-color: #FFFFFF;
+    border: 1px solid #202020;
+}
+
+.box_set>div>p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project {
+    width: 1200px;
+    min-height: 75vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    background: #FDFFFF;
+}
+
+.project_box_case {
+    width: 1170px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #202020;
+    position: relative;
+}
+
+.project_box_set {
+    width: 1170px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_box_set>div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    flex-direction: column;
+    padding: 10px;
+}
+
+.project_box {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #202020;
+}
+
+.project_title {
+    text-align: center;
+    color: #202020;
+}
+
+.project_title h2 {
+    font-size: 60px;
+}
+
+.project_name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.company_name {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.contents_box {
+    font-size: 15px;
+    line-height: normal;
+}
+
+.contact {
+    background: #FDFFFF;
+}
+
+.box_shadow {
+    box-shadow: 3px 3px 5px #202020;
+}
+
+#sendMessageButton {
+    color: black;
+    border-color: black;
+
+}
+
+#sendMessageButton:hover {
+    color: #F6F6F6;
+    border-color: black;
+    background-color: black;
+}
+
+#from_name {
+    border-color: black;
+}
+
+#subject {
+    border-color: black;
+}
+
+#message {
+    border-color: black;
+}
+
+#from_email {
+    border-color: black;
+}
+
+footer {
+    width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #191919;
+    color: #F6F6F6;
+}
+
+.footer_box_case {
+    width: 1170px;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
