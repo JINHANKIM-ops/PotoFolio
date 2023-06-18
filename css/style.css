@@ -54,6 +54,7 @@ header {
 
 .menu_container {
     width: 1200px;
+    width: 100%;
     margin: auto;
     min-height: 8vh;
     background-color: #191919;
@@ -133,7 +134,6 @@ header {
 
 .main_box {
     width: 1200px;
-    min-height: 60vh;
     float: left;
 }
 
@@ -430,7 +430,6 @@ footer {
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    text-align: center;
     background: #191919;
     color: #F6F6F6;
 }
@@ -440,4 +439,5 @@ footer {
     min-height: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
